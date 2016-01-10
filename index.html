@@ -23,38 +23,51 @@
 					An img element with id="preview"
 					-->
 						  <legend>Your Face</legend>
-						  Your image: <input type="file" name="file" required><br>
-						  Image preview: <img id="preview" alt="User photo">
+						  <label for="avatar">Your image:</label>
+						  <input type="file" id="avatar" name="avatar" required><br>
+						  <label for="image-preview">Image preview:</label> 
+						  <img id="preview" alt="User Photo">
 					 </fieldset><!--Your Face Fieldset-->
 					 <fieldset>
 						  <legend>Your General Details</legend>
-						  Name: <input type="text" name="fullname" placeholder="Your full name"><br>
-						  Gender: 
-						  	<input type="radio" name="gender" value="male"> Male
-  							<input type="radio" name="gender" value="female"> Female<br>
-						  Age: <input type="number" name="age" min="18" max="150"><br>
-						  Date of birth: <input type="date" name="bday"><br>
-						  Favorite color: <input type="color" name="favcolor"><br>
-						  Which country:
+						  <label for="name">Name:</label> 
+						  <input type="text" name="fullname" placeholder="Your full name" required><br>
+						  <label for="gender">Gender:</label> 
+						  	<input type="radio" name="gender" value="male" required> Male
+  							<input type="radio" name="gender" value="female" required> Female<br>
+						  <label for="age">Age:</label>  
+						  <input type="number" name="age" min="18" max="150" required><br>
+						  <label for="date-of-birth">Date of birth:</label>  
+						  <input type="date" name="bday"><br>
+						  <label for="fav-color">Favorite color:</label> 
+						  <input type="color" name="favcolor"><br>
+						  <label for="country">Which country:</label> 
 						  	<select name="countries">
-						  		<option value=""></option>
+						  		<option value="No selection"></option>
 							    <option value="USA">USA</option>
 							    <option value="China">China</option>
 							    <option value="Canada">Canada</option>
 							    <option value="Africa">Africa</option>
+							    <option value="Africa">Iran</option>
 							</select>
 					 </fieldset><!--Your General Details Fieldset-->
 					 <fieldset>
 						  <legend>Your Indicators</legend>
-						  Height: <input type="range" name="height" min="0" max="10"><br>
-						  Salary: <input type="range" name="salary" min="0" max="10">
+						  <label for="height">Height:</label>  
+						  <input type="range" name="height" min="0" max="100"><br>
+						  <label for="salary">Salary:</label>  
+						  <input type="range" name="salary" min="0" max="100">
 					 </fieldset><!--Your Indicators Fieldset-->
 					 <fieldset>
 						  <legend>Your Contact Information</legend>
-						  Email: <input type="email" name="email"><br>
-						  Mobile: <input type="tel" name="mobile"><br>
-						  Address: <input type="text" name="address"><br>
-						  Method to contact you:
+						  <label for="email">Email:</label> 
+						  <input type="email" name="email" required><br>
+						  <label for="mobile">Mobile:</label>  
+						  <input type="tel" name="mobile"><br>
+						  <label for="address">Address:</label>  
+						  <textarea rows="4" cols="50" name="user address">
+						  </textarea><br>
+						  <label for="contact-method">Method to contact you:</label> 
 						  	<input type="checkbox" name="email" value="email">Email
 							<input type="checkbox" name="whatsapp" value="whatsapp">Whatsapp
 							<input type="checkbox" name="inappchat" value="inappchat">In-app chat
