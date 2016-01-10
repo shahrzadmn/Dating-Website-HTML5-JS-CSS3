@@ -3,56 +3,9 @@
 Important notes
 You may find one or two of the form elements are not supported in certain browsers. You are recommended to use the Chrome browser.
 -->
-<!--
-The background of each fieldset is lightyellow e.g. background:lightyellow.
-The border of each fieldset is yellow, with 10px width e.g. border:10px solid yellow
-The fieldset needs to have margin-bottom:10px
-The width of each fieldset is 720px
-The width of each label is 180px
-The label text needs to have display:inline-block
-The label text needs to be right-align and top-align 
-The labels of the checkbox and the radio needs to have width:auto
-For the words on both sides of the two range, you can use any appropriate style e.g. text-align:center
-The textarea needs to be width:360px and height:50px
--->
 <html>
 	<head>
 		<title>Dating Website</title>
-		<style>
-			fieldset {
-				background:lightyellow;
-				border:10px solid yellow;
-				margin-bottom:10px;
-				width:720px;
-
-			}
-			label {
-				width:180px;
-				display:inline-block;
-				text-align: right;
-				vertical-align: top;
-			}
-			label.my-radio,label.my-checkbox {
-				width:auto;
-			}
-			.range-tag {
-				text-align: center;
-				width:50px;
-				padding: 3px;
-			}
-			.low {
-				color:white;
-				background-color: red;
-			}
-			.high {
-				color:white;
-				background-color: purple;
-			}
-			textarea {
-				width:360px;
-				height:50px;
-			}
-		</style>
 	</head>
 	<body>
 	<!-- At the top	
@@ -95,8 +48,8 @@ The textarea needs to be width:360px and height:50px
 						  <label for="name">Name:</label> 
 						  <input type="text" name="fullname" placeholder="Your full name" required><br>
 						  <label for="gender">Gender:</label> 
-						  	<input class="my-radio" type="radio" name="gender" value="male" required> Male
-  							<input class="my-radio" type="radio" name="gender" value="female" required> Female<br>
+						  	<input type="radio" name="gender" value="male" required> Male
+  							<input type="radio" name="gender" value="female" required> Female<br>
 						  <label for="age">Age:</label>  
 						  <input type="number" name="age" min="18" max="150" value="18" required><br>
 						  <label for="date-of-birth">Date of birth:</label>  
@@ -123,14 +76,14 @@ The textarea needs to be width:360px and height:50px
 						-->
 						  <legend>Your Indicators</legend>
 						  <label for="height">Height:</label>
-						  <label for="short" class="range-tag low">Short</label>  
+						  <label for="short">Short</label>  
 						  <input type="range" name="height" min="0" max="100">
-						  <label for="tall" class="range-tag high">Tall</label>
+						  <label for="tall">Tall</label>
 						  <br>
 						  <label for="salary">Salary:</label>
-						  <label for="poor" class="range-tag low">Poor</label>  
+						  <label for="poor">Poor</label>  
 						  <input type="range" name="salary" min="0" max="100">
-						  <label for="rich" class="range-tag high">Rich</label>
+						  <label for="rich">Rich</label>
 					 </fieldset><!--Your Indicators Fieldset-->
 					 <fieldset>
 					 <!--
@@ -150,9 +103,9 @@ The textarea needs to be width:360px and height:50px
 						  <textarea rows="4" cols="50" name="user address">
 						  </textarea><br>
 						  <label for="contact-method">Method to contact you:</label> 
-						  	<input class="my-checkbox" type="checkbox" name="email" value="email">Email
-							<input class="my-checkbox" type="checkbox" name="whatsapp" value="whatsapp">Whatsapp
-							<input class="my-checkbox" type="checkbox" name="inappchat" value="inappchat">In-app chat
+						  	<input type="checkbox" name="email" value="email">Email
+							<input type="checkbox" name="whatsapp" value="whatsapp">Whatsapp
+							<input type="checkbox" name="inappchat" value="inappchat">In-app chat
 					 </fieldset><!--Your Contact Information Fieldset-->
 					 <!--
 					 	At the end (not in any fieldset):
